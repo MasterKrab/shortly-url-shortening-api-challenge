@@ -1,0 +1,1 @@
+menuButton.addEventListener("click", () => menu.classList.toggle("navigation--active"));

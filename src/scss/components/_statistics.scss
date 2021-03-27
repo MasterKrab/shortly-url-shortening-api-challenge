@@ -1,0 +1,38 @@
+@use "abstracts/vars/colors" as c;
+
+.statistics,
+.statistics-card{
+   &__title{
+      color: c.$very-dark-blue;
+   }
+
+   &__text{
+      color: c.$grayish-violet;
+      line-height: 1.5;
+   }
+}
+
+.statistics{
+   text-align: center;
+   padding: 1rem;
+   background-color: c.$bg-main;
+
+   &__title{
+      margin-bottom: 0;
+      font-size: 1.3rem;
+
+      @media screen and (min-width: 350px){
+         font-size: 1.65rem;
+      }
+   }
+
+   &__text{
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+.statistics-card{
+
+}

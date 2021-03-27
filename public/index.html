@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly URL shortening API Challenge</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__top">
+        <div class="top-bar"><img class="top-bar__logo" src="assets/img/logo.svg" alt="Shortly logo">
+          <div class="top-bar__button" id="menu-button"><span class="top-bar__icon"></span></div>
+        </div>
+        <nav class="navigation" id="menu">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Resources</a></li>
+          </ul>
+          <div class="account"><a class="account__link" href="#">Login</a><a class="account__link account__link--cyan" href="#">Sign Up</a></div>
+        </nav>
+      </div>
+      <div class="main-header__body">
+        <div class="main-header__illustration"></div>
+        <div class="main-header__card">
+          <h1 class="title">
+             More than just <br>shorter links</h1>
+          <p class="main-header__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p><a class="main-header__link" href="#">Get Started</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="shortener">
+        <form class="form" action="#">
+          <input class="form__input" type="text" name="url" placeholder="Shorten a link here..." aria-laber="Type a url">
+          <button class="form__submit">Shorten It!</button>
+        </form>
+      </div>
+      <article class="statistics">
+        <h2 class="statistics__title">Advanced Statistics</h2>
+        <p class="statistics__text">ack how your links are performing across the web with our advanced statistics dashboard.</p>
+        <div class="statistics__cards">
+          <article class="statistics-card">
+            <h3 class="statistics-card__title">Brand Recognition</h3>
+            <p class="statistics-card__text">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+          </article>
+          <article class="statistics-card">
+            <h3 class="statistics-card__title">Detailed Records</h3>
+            <p class="statistics-card__text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+          </article>
+          <article class="statistics-card">
+            <h3 class="statistics-card__title">Fully Customizable</h3>
+            <p class="statistics-card__text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+          </article>
+        </div>
+      </article>
+      <article class="get-started">
+        <h2 class="get-started__title">Boost your links today</h2><a class="get-started__link" href="#">Get Started</a>
+      </article>
+    </main>
+    <footer class="footer"><img class="footer__logo" src="assets/img/logo.svg" alt="Shortly logo">
+      <ul class="footer-list">
+        <li class="footer-list__item"><a class="footer-list__link" href="#">Features</a>
+          <ul class="footer-sublist">
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Link Shortening</a></li>
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Branded Links</a></li>
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Analytics</a></li>
+          </ul>
+        </li>
+        <li class="footer-list__item"><a class="footer-list__link" href="#">Resources</a>
+          <ul class="footer-sublist">
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Blog</a></li>
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Developers</a></li>
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Support</a></li>
+          </ul>
+        </li>
+        <li class="footer-list__item"><a class="footer-list__link" href="#">Company</a>
+          <ul class="footer-sublist">
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">About</a></li>
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Our Team</a></li>
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Careers</a></li>
+            <li class="footer-sublist__item"><a class="footer-sublist__link" href="#">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="social__item"><a class="social__link" href="#" aria-label="Go to Shortly's facebook"><i class="fab fa-facebook-f social__icon"></i></a></li>
+        <li class="social__item"> <a class="social__link" href="#" aria-label="Go to Shortly's twitter"><i class="fab fa-twitter social__icon"></i></a></li>
+        <li class="social__item"> <a class="social__link" href="#" aria-label="Go to Shortly's pinterest"><i class="fab fa-pinterest social__icon"></i></a></li>
+        <li class="social__item"> <a class="social__link" href="#" aria-label="Go to Shortly's instagram"><i class="fab fa-instagram social__icon"></i></a></li>
+      </ul>
+    </footer>
+    <script src="js/scripts-min.js"> </script>
+  </body>
+</html>

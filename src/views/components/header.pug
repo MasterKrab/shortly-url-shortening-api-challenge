@@ -1,0 +1,24 @@
+header.main-header
+   .main-header__top
+      .top-bar
+         img.top-bar__logo(src="assets/img/logo.svg", alt="Shortly logo")
+         .top-bar__button#menu-button
+            span.top-bar__icon
+
+      nav.navigation#menu
+         ul.menu
+            each page in pages
+               li.menu__item: a.menu__link(href= page.url)= page.title 
+         .account
+            a.account__link(href="#") Login
+            a.account__link.account__link--cyan(href="#") Sign Up
+            
+   .main-header__body
+      .main-header__illustration
+      .main-header__card
+         h1.title 
+            |More than just 
+            br
+            |shorter links
+         p.main-header__text Build your brand’s recognition and get detailed insights on how your links are performing.
+         a.main-header__link(href="#") Get Started

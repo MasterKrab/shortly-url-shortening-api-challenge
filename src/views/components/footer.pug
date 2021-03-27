@@ -1,0 +1,26 @@
+footer.footer
+   img.footer__logo(src="assets/img/logo.svg", alt="Shortly logo")
+      
+   ul.footer-list
+      each footerPage in footerPages
+         li.footer-list__item
+            a.footer-list__link(href=footerPage.url)= footerPage.title
+            if footerPage.children.length > 0
+            ul.footer-sublist
+               each footerSubPage in footerPage.children
+                  li.footer-sublist__item
+                     a.footer-sublist__link(href=footerSubPage.url)= footerSubPage.title
+   
+   ul.social
+      li.social__item
+         a.social__link(href="#", aria-label="Go to Shortly's facebook")
+            i.fab.fa-facebook-f.social__icon
+      li.social__item 
+         a.social__link(href="#", aria-label="Go to Shortly's twitter")
+            i.fab.fa-twitter.social__icon
+      li.social__item 
+         a.social__link(href="#", aria-label="Go to Shortly's pinterest")
+            i.fab.fa-pinterest.social__icon
+      li.social__item 
+         a.social__link(href="#", aria-label="Go to Shortly's instagram")
+            i.fab.fa-instagram.social__icon
