@@ -27,7 +27,7 @@
       padding: 1rem 0.5rem;
       max-width: 1170px;
    
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 900px){
          text-align: start;
          display: grid;
          grid-template-columns: 1fr 400px;
@@ -45,13 +45,13 @@
       width: 150%;
       position: relative;
 
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 900px){
          max-width: 550px;
          margin-left: auto;
          margin-right: auto;
       }
 
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 900px){
          order: 2;
       }
    }
@@ -61,7 +61,7 @@
       line-height: 1.5;
       margin-bottom: 2rem;
 
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 900px){
          font-size: 1.1rem;
          margin-right: 1rem;
       }
@@ -78,7 +78,7 @@
       padding: 0.6rem 1.6rem;
       border-radius: 2rem;
 
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 900px){
          transition: background-color 0.2s;
 
          &:hover{
@@ -92,7 +92,7 @@
    color: c.$very-dark-blue; 
   margin-bottom: 0;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 900px){
    font-size: 2.5rem;
    }
 
