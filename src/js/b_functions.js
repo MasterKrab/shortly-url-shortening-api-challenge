@@ -29,7 +29,7 @@ const printLinks = () =>{
       shortenedLink.textContent = link.shortenedUrl;
       shortenedLink.href = link.shortenedUrl;
       const buttonCopy = templateLink.querySelector(".shortened__copy")
-      buttonCopy.dataset.link = link.url;
+      buttonCopy.dataset.link = link.shortenedUrl;
       buttonCopy.ariaLabel = `Copy the shortened link from ${link.url} to the clipboard`
 
       const cloneTemplate = document.importNode(templateLink, true);
