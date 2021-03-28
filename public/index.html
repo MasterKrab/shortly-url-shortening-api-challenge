@@ -60,7 +60,7 @@
           <button class="form__submit">Shorten It!</button>
         </form>
         <div class="spinner" id="spinner"><img class="spinner__image" src="assets/img/spinner.svg" alt="Loading spinner"><a class="spinner__link" href="https://loading.io/">Spinner is provided by loading.io</a></div>
-        <div class="links" id="links-container"></div>
+        <ul class="links" id="links-container"></ul>
       </div>
       <article class="statistics">
         <h2 class="statistics__title">Advanced Statistics</h2>
@@ -85,9 +85,9 @@
       </article>
     </main>
     <template id="template-link">
-      <div class="shortened"><a class="shortened__link"> </a><a class="shortened__shortened-link"></a>
+      <li class="shortened"><a class="shortened__link"> </a><a class="shortened__shortened-link"></a>
         <button class="shortened__copy">Copy</button>
-      </div>
+      </li>
     </template>
     <footer class="footer"><img class="footer__logo" src="assets/img/logo.svg" alt="Shortly logo">
       <ul class="footer-list">
