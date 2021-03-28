@@ -53,6 +53,7 @@ const shortenUrl = async url =>{
       return data.result.full_short_link;
    } catch (error) {
       form.url.parentElement.dataset.error = "We could not shorten that link";
+      spinner.classList.remove("spinner--active");
       showError();
       console.error(error);
    };
@@ -62,6 +63,7 @@ const addLink = async url =>{
    for(const link of links){
       if(url === link.url){
          form.url.parentElement.dataset.error = "This link has already been shortened";
+         spinner.classList.remove("spinner--active");
          showError();
          return;
       }
@@ -72,8 +74,11 @@ const addLink = async url =>{
       shortenedUrl: await shortenUrl(url)
    };
 
-   links = [...links, urlInfo];
-   syncLocalStorage("links", links);
+   if(validateUrl(urlInfo.shortenedUrl)){
+      links = [...links, urlInfo];
+      syncLocalStorage("links", links);
+      printLinks();
+   }
 };
 
 const validateUrl = url => {

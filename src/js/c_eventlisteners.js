@@ -9,7 +9,6 @@ form.addEventListener("submit", async e => {
       form.url.parentElement.classList.remove("form__input-container--error");
       spinner.classList.add("spinner--active");
       await addLink(form.url.value);
-      printLinks();
       return;
    }
 
