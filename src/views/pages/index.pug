@@ -12,7 +12,9 @@ block content
                      aria-label="Type a url"
                   )
             button.form__submit Shorten It!
-         img.spinner#spinner(src="assets/img/spinner.svg", alt="Loading spinner")
+         .spinner#spinner
+            img.spinner__image(src="assets/img/spinner.svg", alt="Loading spinner")
+            a.spinner__link(href="https://loading.io/") Spinner is provided by loading.io
          .links#links-container
          
       article.statistics

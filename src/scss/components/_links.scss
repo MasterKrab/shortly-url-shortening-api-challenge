@@ -6,9 +6,15 @@
    margin-right: auto;
    position: relative;
    top: 90px;
+   place-items: center;
 
    &--active{
-      display: block;
+      display: grid;
+   }
+
+   &__link{
+      color: c.$cyan;
+      text-decoration: none;
    }
 }
 
