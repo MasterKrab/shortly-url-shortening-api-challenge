@@ -14,7 +14,7 @@ block content
             button.form__submit Shorten It!
          .spinner#spinner
             img.spinner__image(src="assets/img/spinner.svg", alt="Loading spinner")
-            a.spinner__link(href="https://loading.io/") Spinner is provided by loading.io
+            a.spinner__link(href="https://loading.io/", target="_blank", rel="noopener noreferrer") Spinner is provided by loading.io
          ul.links#links-container
          
       article.statistics
@@ -40,6 +40,6 @@ block content
 
    template#template-link
       li.shortened
-         a.shortened__link 
-         a.shortened__shortened-link
+         a.shortened__link(target="_blank", rel="noopener noreferrer") 
+         a.shortened__shortened-link(target="_blank", rel="noopener noreferrer")
          button.shortened__copy Copy
