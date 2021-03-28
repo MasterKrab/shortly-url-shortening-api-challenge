@@ -53,24 +53,27 @@
     </header>
     <main class="main">
       <div class="shortener">
-        <form class="form" action="#">
-          <input class="form__input" type="text" name="url" placeholder="Shorten a link here..." aria-laber="Type a url">
+        <form class="form" id="form" action="#">
+          <div class="form__input-container" data-error="Please add a link">
+            <input class="form__input" type="text" name="url" placeholder="Shorten a link here..." aria-laber="Type a url">
+          </div>
           <button class="form__submit">Shorten It!</button>
-        </form>
+        </form><img class="spinner" id="spinner" src="assets/img/spinner.svg" alt="Loading spinner">
+        <div class="links" id="links-container"></div>
       </div>
       <article class="statistics">
         <h2 class="statistics__title">Advanced Statistics</h2>
         <p class="statistics__text">ack how your links are performing across the web with our advanced statistics dashboard.</p>
         <div class="statistics__cards">
-          <article class="statistics-card">
+          <article class="statistics-card statistics-card--brand">
             <h3 class="statistics-card__title">Brand Recognition</h3>
             <p class="statistics-card__text">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
           </article>
-          <article class="statistics-card">
+          <article class="statistics-card statistics-card--detailed">
             <h3 class="statistics-card__title">Detailed Records</h3>
             <p class="statistics-card__text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
           </article>
-          <article class="statistics-card">
+          <article class="statistics-card statistics-card--customizable">
             <h3 class="statistics-card__title">Fully Customizable</h3>
             <p class="statistics-card__text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
           </article>
@@ -80,6 +83,11 @@
         <h2 class="get-started__title">Boost your links today</h2><a class="get-started__link" href="#">Get Started</a>
       </article>
     </main>
+    <template id="template-link">
+      <div class="shortened"><a class="shortened__link"> </a><a class="shortened__shortened-link"></a>
+        <button class="shortened__copy">Copy</button>
+      </div>
+    </template>
     <footer class="footer"><img class="footer__logo" src="assets/img/logo.svg" alt="Shortly logo">
       <ul class="footer-list">
         <li class="footer-list__item"><a class="footer-list__link" href="#">Features</a>
@@ -112,6 +120,7 @@
         <li class="social__item"> <a class="social__link" href="#" aria-label="Go to Shortly's instagram"><i class="fab fa-instagram social__icon"></i></a></li>
       </ul>
     </footer>
+    <script src="https://unpkg.com/regenerator-runtime@0.13.4/runtime.js"> </script>
     <script src="js/scripts-min.js"> </script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+@use "abstracts/vars/colors" as c;
+
+.get-started{
+   background-color: c.$dark-violet;
+   background-image: url(../assets/img/bg-boost-mobile.svg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+  padding: 3rem 1rem;
+   text-align: center;
+   color: #fff;
+   
+   @media screen and (min-width: 768px) {
+      background-image: url(../assets/img/bg-boost-desktop.svg);
+      background-size: cover;
+      padding-top: 2rem;
+   }
+
+   &__title{
+      margin-bottom: 1.5rem;
+      
+      @media screen and (min-width: 768px){
+         font-size: 2.2rem;
+         margin-bottom: 2.5rem;
+      }
+   }
+
+   &__link{
+      text-decoration: none;
+      color: inherit;
+      background-color: c.$cyan;
+      padding: 0.6rem 1.5rem;
+      border-radius: 2rem;
+
+      @media screen and (min-width: 768px){
+         transition: background-color 0.2s;
+
+         &:hover{
+            background-color: lighten(c.$cyan, 20%);
+         }
+      }
+   }
+}

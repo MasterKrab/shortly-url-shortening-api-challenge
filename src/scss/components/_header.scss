@@ -77,6 +77,14 @@
       color: #fff;
       padding: 0.6rem 1.6rem;
       border-radius: 2rem;
+
+      @media screen and (min-width: 768px){
+         transition: background-color 0.2s;
+
+         &:hover{
+            background-color: lighten(c.$cyan, 20%);
+         }
+      }
    }
 }
 
@@ -199,6 +207,11 @@
 
    @media screen and (min-width: 768px){
       margin-left: 1rem;
+      transition: color 0.2s;
+
+      &:hover{
+         color: c.$very-dark-violet;
+      }
    }
 }
 
@@ -222,5 +235,11 @@
    @media screen and (min-width: 768px){
       padding: 0.6rem 1.3rem;
       border-radius: 2rem;
+      transition: background-color 0.2s;
+
+      &:hover{
+         color: #fff;
+         background-color: lighten(c.$cyan, 20%);
+      }
    }
 }
